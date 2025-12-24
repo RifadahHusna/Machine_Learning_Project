@@ -1,15 +1,25 @@
-[project]
-name = "streamlit-ML"
+[tool.poetry]
+name = "streamlit-ml"
 version = "0.1.0"
-description = "Default template for PDM package"
-authors = [
-    {name = "Depi21", email = "devidianaprilia@webmail.umm.ac.id"},
-]
-dependencies = []
-requires-python = ">=3.10"
+description = "Streamlit ML App"
+authors = ["Rifadah Husna"]
 readme = "README.md"
-license = {text = "MIT"}
 
+# 🔑 INI PALING PENTING
+package-mode = false
 
-[tool.pdm]
-distribution = false
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+streamlit = "^1.32.0"
+torch = "*"
+torchvision = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+matplotlib = "*"
+seaborn = "*"
+transformers = "*"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
